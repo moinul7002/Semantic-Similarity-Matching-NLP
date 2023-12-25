@@ -6,8 +6,8 @@ Test the similarity between two sentences using online lexical database WordNet.
 2.	Identify the synsets of the word “car” and rank them in the order of their frequency of occurrence
 (most common synset first, less common synset at the end). For this purpose, you may use the coding:
 car = wn.synsets('car', 'n')[0] print car.lemmas()[0].count()
-### Get the most common synset
-### Get the first lemma
+-> Get the most common synset
+-> Get the first lemma
 3.	Now consider two sentences T1 and T2, each constituted with a set of tokens. For this purpose, study expression (1) of the aforementioned Mihalcea et al.’s paper above (see below).  You can check with a potential implementation available at https://nlpforhackers.io/wordnet-sentence-similarity/ 
 4.	Start with sentences: T1: “Students feel unhappy today about the class today”. T2: ”Many students felt concepts of class test relevant”,  and study the influence of various preprocessing (stopword removal, stemming) on the result of the sentence-to-sentence similarity above.
 5.	Implement a program that calculates the sentence-to-sentence similarity as the result of the FuzzyWuzzy score of comparison of string of both sentences, after initial preprocessing and lemmatization using wordnet lemmatizer. Calculate the new similarity score between sentence T1 and T2.
